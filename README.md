@@ -39,7 +39,7 @@ cancer-risk-questionnaire/
 
 1. Clone the Repository -
 ```
-   git clone [https://github.com/vinodkumarkuruva/Cancer_Risk.git]
+   git clone https://github.com/vinodkumarkuruva/Cancer_Risk.git
    cd Cancer_Risk
 ```
 
