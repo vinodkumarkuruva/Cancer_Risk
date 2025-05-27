@@ -39,8 +39,8 @@ cancer-risk-questionnaire/
 
 1. Clone the Repository -
 ```
-   git clone https://github.com/vinodkumarkuruva/Task_Management.git
-   cd Task_Management
+   git clone [https://github.com/vinodkumarkuruva/Cancer_Risk.git]
+   cd Cancer_Risk
 ```
 
 2. Set Up a Virtual Environment (Optional but Recommended) -
@@ -52,21 +52,21 @@ env\Scripts\activate         # On Windows
 
 3. Install Required Dependencies -
    
-   ```
-   pip install -r requirements.txt
-   ```
+```
+pip install -r requirements.txt
+```
 
 4. Configure the Database -
     
-   ```
-      For PostgreSQL:
-      Update the DATABASES setting[URL] in .env file.
-   ```
+```
+For PostgreSQL:
+Update the DATABASES setting[URL] in .env file.
+ ```
 
 5. Run the Server -
 
-   ```
-   uvicorn main:app --reload
-   Access the application at : http://127.0.0.1:8000/
- ```
+```
+uvicorn main:app --reload
+Access the application at : http://127.0.0.1:8000/
+```
 
