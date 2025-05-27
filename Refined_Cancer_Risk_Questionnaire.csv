@@ -1,0 +1,24 @@
+Section,Sub-section,Question ID,Question Text,Question Type,Options,Required,Conditional Logic,Target Gender,Target Age Range,Info Tooltip
+Demographics,Basic Info,Q1,What is your biological sex assigned at birth?,Radio,Male;Female;Intersex,Yes,,All,Any,Crucial for gender-specific cancers
+Demographics,Basic Info,Q2,What is your age?,Number,,Yes,,All,Any,Used to assess age-related cancer risk
+Genetic History,Family Cancer History,Q3,Has any first-degree relative had cancer?,Radio,Yes;No,Yes,,All,Any,
+Genetic History,Family Cancer History,Q4,"If yes, what type(s) of cancer did they have?",Checkbox,Breast;Ovarian;Colorectal;Prostate;Lung;Pancreatic;Other,No,Show if Q3 = 'Yes',All,Any,
+Genetic History,Genetic Testing,Q5,Have you undergone genetic testing for cancer risk?,Radio,Yes;No,No,,All,Any,
+Genetic History,Genetic Testing,Q6,Which gene mutations were detected (if any)?,Checkbox,BRCA1;BRCA2;TP53;MLH1;MSH2;APC;CDH1;STK11;None;Unknown,No,Show if Q5 = 'Yes',All,Any,
+Medical History,Chronic Diseases,Q7,Do you have any chronic medical conditions?,Checkbox,Diabetes;IBD (Crohn’s/Colitis);Hepatitis B;Hepatitis C;HPV;HIV;Endometriosis;None,Yes,,All,Any,
+Medical History,Previous Cancer,Q8,Have you ever been diagnosed with cancer?,Radio,Yes;No,Yes,,All,Any,
+Medical History,Previous Cancer,Q9,"If yes, what type of cancer?",Text,,No,Show if Q8 = 'Yes',All,Any,
+Lifestyle,Tobacco,Q10,Do you currently or previously use tobacco?,Radio,Never;Current;Former,Yes,,All,Any,"Includes cigarettes, chewing tobacco, vaping"
+Lifestyle,Alcohol,Q11,How frequently do you consume alcohol?,Radio,Never;Occasionally;Frequently,Yes,,All,Any,
+Lifestyle,Activity,Q12,How would you describe your physical activity?,Radio,Sedentary;Light;Moderate;Vigorous,Yes,,All,Any,
+Lifestyle,Diet,Q13,Do you consume fruits and vegetables daily?,Radio,Yes;No,Yes,,All,Any,
+Symptoms,General,Q14,Have you experienced unintended weight loss recently?,Radio,Yes;No,Yes,,All,Any,
+Symptoms,General,Q15,Have you had persistent fatigue for over a month?,Radio,Yes;No,Yes,,All,Any,
+Symptoms,Breast,Q16,Do you have any lumps or changes in breast tissue?,Radio,Yes;No,Yes,Show if Q1 = 'Female',Female,Any,
+Symptoms,Urological,Q17,Have you noticed blood in your urine?,Radio,Yes;No,Yes,,All,Any,
+Symptoms,Gastrointestinal,Q18,Have you experienced persistent changes in bowel habits?,Radio,Yes;No,Yes,,All,Any,
+Symptoms,Respiratory,Q19,Do you have a chronic cough or coughing up blood?,Radio,Yes;No,Yes,,All,Any,
+Symptoms,Gynecological,Q20,Have you had abnormal vaginal bleeding?,Radio,Yes;No,Yes,Show if Q1 = 'Female',Female,Any,
+Symptoms,Men's Health,Q21,Have you noticed difficulty urinating or erectile dysfunction?,Radio,Yes;No,Yes,Show if Q1 = 'Male',Male,Any,
+Exposure,Occupational,Q22,Have you worked in environments with chemical or radiation exposure?,Radio,Yes;No,Yes,,All,Any,"E.g., factories, labs, mining"
+Exposure,Radiation,Q23,Have you undergone radiation treatment in the past?,Radio,Yes;No,Yes,,All,Any,
